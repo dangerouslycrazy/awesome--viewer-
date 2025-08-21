@@ -1,2 +1,14 @@
 README.md linguist-generated=true
 *.md linguist-language=Dart
+STACKTRACE:
+java.lang.AssertionError
+ at org.junit.Assert.fail(Assert.java:87)
+ at org.junit.Assert.assertTrue(Assert.java:42)
+ at org.junit.Assert.assertTrue(Assert.java:53)
+ at android.test.example.devcodelab.DevCodelabTest.testHelloWorld(DevCodelabTest.java:29)org.junit.Assert.faillunch aosp_cf_x86_64_only_phone-aosp_current-userdebug
+export REPO=$(mktemp /tmp/repo.XXXXXXXXX)
+curl -o ${REPO} https://storage.googleapis.com/git-repo-downloads/repo
+gpg --recv-keys 8BB9AD793E8E6153AF0F9A4416530D5E920F5C65
+curl -s https://storage.googleapis.com/git-repo-downloads/repo.asc | gpg --verify - ${REPO} && install -m 755 ${REPO} ~/bin/repohttps://storage.googleapis.com/git-repo-downloads/reposource build/envsetup.sh
+org.junit.Assert.fail
+java.lang.AssertionError
